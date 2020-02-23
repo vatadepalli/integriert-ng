@@ -9,9 +9,12 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
       <div class="branding">
-        <img
+        <a [routerLink]="['/']" routerLinkActive="router-link-active"
+          (click)="drawer.toggle()">
+          <img
           [ngClass]="{'branding-mobile': (isHandset$ | async) === true}"
           src="assets/logo.png" alt="integriert logo">
+        </a>
       </div>
     </mat-toolbar>
     <mat-nav-list>
@@ -36,7 +39,7 @@
       [ngClass]="{'tall-nav': (isHandset$ | async) === false}"
     >
 
-      <div class="branding">
+      <div class="branding" [routerLink]="['/']" routerLinkActive="router-link-active" >
         <img
           [ngClass]="{'branding-mobile': (isHandset$ | async) === true}"
           src="assets/logo.png" alt="integriert logo">

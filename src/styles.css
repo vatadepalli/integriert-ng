@@ -8,3 +8,27 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+*{
+  outline: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #0074C8;
+}
+
+.inline{
+  display: inline;
+  margin-right: 15px;
+}
+
+

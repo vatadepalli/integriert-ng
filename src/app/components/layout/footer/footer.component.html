@@ -1,11 +1,41 @@
-<mat-divider></mat-divider>
+<section style="background-color: white;">
+  <mat-divider></mat-divider>
 
-<mat-grid-list
-  [cols]="(isHandset$ | async) ? '1' : '2'"
-  [style.background]="'white'"
-  rowHeight="3rem"
-  >
-  <mat-grid-tile [rowspan]="(isHandset$ | async) ? '5' : '1'" >Nav Items</mat-grid-tile>
-  <mat-grid-tile> Social Icons</mat-grid-tile>
-  <mat-grid-tile [colspan]="(isHandset$ | async) ? '1' : '2'"> Privacy & Copyright</mat-grid-tile>
-</mat-grid-list>
+  <br>
+
+  <mat-grid-list
+    [cols]="(isHandset$ | async) ? '1' : '2'"
+    [style.background]="'white'"
+    rowHeight="3rem"
+    >
+    <mat-grid-tile [rowspan]="(isHandset$ | async) ? '2' : '1'">
+      <ul style="list-style: none; font-size: 1rem; text-align: center; line-height: 1.8;">
+        <li class="inline"><a [routerLink]="['/what-we-do']"> What we do </a></li>
+        <li class="inline"><a [routerLink]="['/partners']"> Our partners</a></li>
+        <li class="inline"><a [routerLink]="['/solutions']"> Solutions</a></li>
+        <li class="inline"><a [routerLink]="['/insights']"> Insights</a></li>
+        <li class="inline"><a [routerLink]="['/about']"> About</a></li>
+        <li class="inline"><a [routerLink]="['/contact']"> Contact</a></li>
+      </ul>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="(isHandset$ | async) ? '1' : '2'">
+      <p style="font-size: 0.8rem;">
+        <a
+          [routerLink]="['/privacy']"
+          routerLinkActive="router-link-active"
+          >
+          Privacy Policy
+        </a>
+        &nbsp; | © 2020 Integriert, Inc.
+      </p>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

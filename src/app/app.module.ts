@@ -22,7 +22,8 @@ import { MatGridListModule } from '@angular/material';
 import { WhatWeDoComponent } from './components/pages/what-we-do/what-we-do.component';
 import { SolutionsComponent } from './components/pages/solutions/solutions.component';
 import { PartnersComponent } from './components/pages/partners/partners.component';
-import { InsightsComponent } from './components/pages/insights/insights.component'
+import { InsightsComponent } from './components/pages/insights/insights.component';
+import { PrivacyComponent } from './components/pages/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { InsightsComponent } from './components/pages/insights/insights.componen
     WhatWeDoComponent,
     SolutionsComponent,
     PartnersComponent,
-    InsightsComponent
+    InsightsComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,

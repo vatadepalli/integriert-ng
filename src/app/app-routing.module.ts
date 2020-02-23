@@ -9,6 +9,7 @@ import { WhatWeDoComponent } from './components/pages/what-we-do/what-we-do.comp
 import { SolutionsComponent } from './components/pages/solutions/solutions.component';
 import { PartnersComponent } from './components/pages/partners/partners.component';
 import { InsightsComponent } from './components/pages/insights/insights.component';
+import { PrivacyComponent } from './components/pages/privacy/privacy.component';
 
 
 
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: "solutions", component: SolutionsComponent},
   {path: "what-we-do", component: WhatWeDoComponent},
   {path: "insights", component: InsightsComponent},
+  {path: "privacy", component: PrivacyComponent},
 
 ];
 
