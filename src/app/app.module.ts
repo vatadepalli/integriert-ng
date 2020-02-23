@@ -18,6 +18,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MainComponent } from './components/layout/main/main.component';
+import { MatGridListModule } from '@angular/material'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MainComponent } from './components/layout/main/main.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

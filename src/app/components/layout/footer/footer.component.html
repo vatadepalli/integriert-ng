@@ -1,1 +1,11 @@
-<p>footer works!</p>
+<mat-divider></mat-divider>
+
+<mat-grid-list
+  [cols]="(isHandset$ | async) ? '1' : '2'"
+  [style.background]="'white'"
+  rowHeight="3rem"
+  >
+  <mat-grid-tile [rowspan]="(isHandset$ | async) ? '5' : '1'" >Nav Items</mat-grid-tile>
+  <mat-grid-tile> Social Icons</mat-grid-tile>
+  <mat-grid-tile [colspan]="(isHandset$ | async) ? '1' : '2'"> Privacy & Copyright</mat-grid-tile>
+</mat-grid-list>
