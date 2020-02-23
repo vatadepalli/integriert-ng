@@ -67,3 +67,7 @@ mat-toolbar {
 .burger{
   color: #000000;
 }
+
+#top-nav-links-div > a:hover{
+  color: #0074C8 !important;
+}

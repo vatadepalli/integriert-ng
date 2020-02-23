@@ -19,17 +19,17 @@
     </mat-toolbar>
     <mat-nav-list>
       <!-- SIDENAV  -->
-      <a class="sidenav-link" mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" (click)="drawer.toggle()">What we do</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" (click)="drawer.toggle()">What we do<span class="spacer"></span><i class="fa fa-angle-right"></i></a>
       <mat-divider style="width: 90%; margin: auto;"></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/partners']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Our Partners</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/partners']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Our Partners<span class="spacer"></span><i class="fa fa-angle-right"></i></a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/solutions']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Solutions</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/solutions']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Solutions<span class="spacer"></span><i class="fa fa-angle-right"></i></a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/insights']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Insights</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/insights']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Insights<span class="spacer"></span><i class="fa fa-angle-right"></i></a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active" (click)="drawer.toggle()">About</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active" (click)="drawer.toggle()">About<span class="spacer"></span><i class="fa fa-angle-right"></i></a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/contact']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Contact</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/contact']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Contact<span class="spacer"></span><i class="fa fa-angle-right"></i></a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -47,7 +47,7 @@
 
       <span class="spacer"></span>
 
-      <div *ngIf="!(isHandset$ | async)">
+      <div id="top-nav-links-div" *ngIf="!(isHandset$ | async)">
         <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" >What we do</a>
         <a mat-list-item [routerLink]="['/partners']" routerLinkActive="router-link-active" >Our Partners</a>
         <a mat-list-item [routerLink]="['/solutions']" routerLinkActive="router-link-active" >Solutions</a>

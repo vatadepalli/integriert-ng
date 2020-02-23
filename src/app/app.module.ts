@@ -10,7 +10,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { AboutComponent } from './components/pages/about/about.component';
-import { MainNavComponent } from './components/layout/main-nav/main-nav.component';
+import { NavigatorComponent } from './components/layout/navigator/navigator.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -25,6 +25,7 @@ import { PartnersComponent } from './components/pages/partners/partners.componen
 import { InsightsComponent } from './components/pages/insights/insights.component';
 import { PrivacyComponent } from './components/pages/privacy/privacy.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,7 @@ import { PrivacyComponent } from './components/pages/privacy/privacy.component';
     RegisterComponent,
     ContactComponent,
     AboutComponent,
-    MainNavComponent,
+    NavigatorComponent,
     MainComponent,
     WhatWeDoComponent,
     SolutionsComponent,

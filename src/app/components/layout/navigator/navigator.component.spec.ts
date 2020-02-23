@@ -7,7 +7,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { MainNavComponent } from './main-nav.component';
+import { MainNavComponent } from './navigator.component';
 
 describe('MainNavComponent', () => {
   let component: MainNavComponent;

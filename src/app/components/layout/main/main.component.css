@@ -1,3 +1,16 @@
 .section {
   width: 100%;
 }
+
+
+.section:nth-child(even){
+  background-color: white;
+}
+
+.section:nth-child(odd){
+  background-color: whitesmoke;
+}
+
+.container{
+  background-color: white;
+}
