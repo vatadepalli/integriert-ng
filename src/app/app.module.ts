@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/layout/footer/footer.component';
-import { LandingComponent } from './components/layout/landing/landing.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
@@ -18,17 +17,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MainComponent } from './components/layout/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    LandingComponent,
     LoginComponent,
     RegisterComponent,
     ContactComponent,
     AboutComponent,
-    MainNavComponent
+    MainNavComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
