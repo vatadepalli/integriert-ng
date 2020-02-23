@@ -25,6 +25,16 @@
   flex: 1 1 auto;
 }
 
+.sidenav-link{
+  height: 60px !important;
+  font-size: 18px;
+}
+
+mat-divider {
+  width: 90%;
+  margin: auto;
+}
+
 mat-toolbar a {
   display: inline-block;
   margin: 0 10px;
@@ -50,7 +60,7 @@ mat-toolbar {
 }
 
 .branding-mobile{
-  padding-top: 10px;
+  padding-top: 15px;
   height: 35px !important;
 }
 

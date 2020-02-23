@@ -8,15 +8,24 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      Menu
+      <div class="branding">
+        <img
+          [ngClass]="{'branding-mobile': (isHandset$ | async) === true}"
+          src="assets/logo.png" alt="integriert logo">
+      </div>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" (click)="drawer.toggle()">What we do</a>
-      <a mat-list-item [routerLink]="['/login']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Our Partners</a>
-      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Solutions</a>
-      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Insights</a>
-      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">About</a>
-      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Contacts</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" (click)="drawer.toggle()">What we do</a>
+      <mat-divider style="width: 90%; margin: auto;"></mat-divider>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/login']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Our Partners</a>
+      <mat-divider></mat-divider>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Solutions</a>
+      <mat-divider></mat-divider>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Insights</a>
+      <mat-divider></mat-divider>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">About</a>
+      <mat-divider></mat-divider>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Contacts</a>
     </mat-nav-list>
   </mat-sidenav>
 
