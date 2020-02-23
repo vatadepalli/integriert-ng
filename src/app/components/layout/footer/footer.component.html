@@ -9,14 +9,14 @@
     rowHeight="3rem"
     >
     <mat-grid-tile [rowspan]="(isHandset$ | async) ? '2' : '1'">
-      <ul style="list-style: none; font-size: 1rem; text-align: center; line-height: 1.8;">
-        <li class="inline"><a [routerLink]="['/what-we-do']"> What we do </a></li>
-        <li class="inline"><a [routerLink]="['/partners']"> Our partners</a></li>
-        <li class="inline"><a [routerLink]="['/solutions']"> Solutions</a></li>
-        <li class="inline"><a [routerLink]="['/insights']"> Insights</a></li>
-        <li class="inline"><a [routerLink]="['/about']"> About</a></li>
-        <li class="inline"><a [routerLink]="['/contact']"> Contact</a></li>
-      </ul>
+      <div style="list-style: none; font-size: 1rem; text-align: center; line-height: 1.8;">
+        <a class="inline" [routerLink]="['/what-we-do']"> What we do </a>
+        <a class="inline" [routerLink]="['/partners']"> Our partners</a>
+        <a class="inline" [routerLink]="['/solutions']"> Solutions</a>
+        <a class="inline" [routerLink]="['/insights']"> Insights</a>
+        <a class="inline" [routerLink]="['/about']"> About</a>
+        <a class="inline" [routerLink]="['/contact']"> Contact</a>
+      </div>
     </mat-grid-tile>
 
     <mat-grid-tile>
