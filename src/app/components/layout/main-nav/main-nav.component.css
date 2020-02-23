@@ -3,6 +3,7 @@
 }
 
 .sidenav {
+  /* width: 275px; */
   width: 275px;
 }
 
@@ -27,6 +28,32 @@
 mat-toolbar a {
   display: inline-block;
   margin: 0 10px;
-  color: white;
+  color: #000000;
   text-decoration: none;
+}
+
+.branding{
+  color: black !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.branding img{
+  height: 40px;
+}
+
+mat-toolbar {
+  background-color: #FFFFFF !important;
+}
+
+.tall-nav{
+  height: 100px;
+}
+
+.branding-mobile{
+  padding-top: 10px;
+  height: 35px !important;
+}
+
+.burger{
+  color: #000000;
 }

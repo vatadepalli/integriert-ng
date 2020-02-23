@@ -7,27 +7,37 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Integriert</mat-toolbar>
+    <mat-toolbar>
+      Menu
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" >What we do</a>
-      <a mat-list-item [routerLink]="['/login']" routerLinkActive="router-link-active" >Our Partners</a>
-      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >Insights</a>
-      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >About</a>
-      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >Contact</a>
+      <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" (click)="drawer.toggle()">What we do</a>
+      <a mat-list-item [routerLink]="['/login']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Our Partners</a>
+      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Solutions</a>
+      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Insights</a>
+      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">About</a>
+      <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Contacts</a>
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar
+      color="primary"
+      [ngClass]="{'tall-nav': (isHandset$ | async) === false}"
+    >
 
-      <span>Integriert</span>
+      <div class="branding">
+        <img
+          [ngClass]="{'branding-mobile': (isHandset$ | async) === true}"
+          src="../../../../assets/logo-trans.png" alt="integriert-logo">
+      </div>
 
       <span class="spacer"></span>
 
       <div *ngIf="!(isHandset$ | async)">
         <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" >What we do</a>
         <a mat-list-item [routerLink]="['/login']" routerLinkActive="router-link-active" >Our Partners</a>
-        <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >Insights</a>
+        <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >Solutions</a>
         <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >About</a>
         <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >Contact</a>
       </div>
@@ -38,7 +48,7 @@
       mat-icon-button
       (click)="drawer.toggle()"
       *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-icon aria-label="Side nav toggle icon" class="burger">menu</mat-icon>
       </button>
 
     </mat-toolbar>
