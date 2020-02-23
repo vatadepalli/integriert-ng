@@ -15,17 +15,18 @@
       </div>
     </mat-toolbar>
     <mat-nav-list>
+      <!-- SIDENAV  -->
       <a class="sidenav-link" mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" (click)="drawer.toggle()">What we do</a>
       <mat-divider style="width: 90%; margin: auto;"></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/login']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Our Partners</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/partners']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Our Partners</a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Solutions</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/solutions']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Solutions</a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Insights</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/insights']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Insights</a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">About</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active" (click)="drawer.toggle()">About</a>
       <mat-divider></mat-divider>
-      <a class="sidenav-link" mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Contacts</a>
+      <a class="sidenav-link" mat-list-item [routerLink]="['/contact']" routerLinkActive="router-link-active" (click)="drawer.toggle()">Contact</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -45,10 +46,11 @@
 
       <div *ngIf="!(isHandset$ | async)">
         <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" >What we do</a>
-        <a mat-list-item [routerLink]="['/login']" routerLinkActive="router-link-active" >Our Partners</a>
-        <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >Solutions</a>
-        <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >About</a>
-        <a mat-list-item [routerLink]="['/register']" routerLinkActive="router-link-active" >Contact</a>
+        <a mat-list-item [routerLink]="['/partners']" routerLinkActive="router-link-active" >Our Partners</a>
+        <a mat-list-item [routerLink]="['/solutions']" routerLinkActive="router-link-active" >Solutions</a>
+        <a mat-list-item [routerLink]="['/insights']" routerLinkActive="router-link-active" >Insights</a>
+        <a mat-list-item [routerLink]="['/about']" routerLinkActive="router-link-active" >About</a>
+        <a mat-list-item [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a>
       </div>
 
       <button

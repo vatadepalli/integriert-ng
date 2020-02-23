@@ -18,7 +18,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MainComponent } from './components/layout/main/main.component';
-import { MatGridListModule } from '@angular/material'
+import { MatGridListModule } from '@angular/material';
+import { WhatWeDoComponent } from './components/pages/what-we-do/what-we-do.component';
+import { SolutionsComponent } from './components/pages/solutions/solutions.component';
+import { PartnersComponent } from './components/pages/partners/partners.component';
+import { InsightsComponent } from './components/pages/insights/insights.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { MatGridListModule } from '@angular/material'
     ContactComponent,
     AboutComponent,
     MainNavComponent,
-    MainComponent
+    MainComponent,
+    WhatWeDoComponent,
+    SolutionsComponent,
+    PartnersComponent,
+    InsightsComponent
   ],
   imports: [
     BrowserModule,
