@@ -1,7 +1,7 @@
 <section style="background-color: white;">
   <mat-divider></mat-divider>
 
-  <br>
+  <br *ngIf="!(isHandset$ | async) ">
 
   <mat-grid-list
     [cols]="(isHandset$ | async) ? '1' : '2'"
@@ -26,6 +26,15 @@
       <a href="#" class="fa fa-instagram"></a>
     </mat-grid-tile>
 
+  </mat-grid-list>
+
+  <br>
+  <mat-divider></mat-divider>
+
+  <mat-grid-list
+      [cols]="(isHandset$ | async) ? '1' : '2'"
+      [style.background]="'white'"
+      rowHeight="3rem">
     <mat-grid-tile [colspan]="(isHandset$ | async) ? '1' : '2'">
       <p style="font-size: 0.8rem;">
         <a
@@ -38,4 +47,5 @@
       </p>
     </mat-grid-tile>
   </mat-grid-list>
+
 </section>
