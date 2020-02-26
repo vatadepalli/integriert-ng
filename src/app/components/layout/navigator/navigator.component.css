@@ -38,7 +38,7 @@ mat-divider {
 mat-toolbar a {
   display: inline-block;
   margin: 0 10px;
-  color: #000000;
+  /* color: #000000; */
   text-decoration: none;
 }
 
@@ -69,5 +69,6 @@ mat-toolbar {
 }
 
 #top-nav-links-div > a:hover{
-  color: #0074C8 !important;
+  color: #FAB803 !important;
 }
+

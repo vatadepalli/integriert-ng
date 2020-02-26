@@ -1,0 +1,59 @@
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  max-height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  background-color: black;
+}
+
+img {
+  opacity: 0.5;
+}
+
+/* Bottom left text */
+/* .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+} */
+
+/* Top left text */
+/* .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+} */
+
+/* Top right text */
+/* .top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+} */
+
+/* Bottom right text */
+/* .bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+} */
+
+/* Centered text */
+.centered-text-lg {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: 'Open Sans', 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.centered-text-sm {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-30%, -50%);
+  font-family: "Open Sans", 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}

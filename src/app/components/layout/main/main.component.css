@@ -1,5 +1,6 @@
 .section {
   width: 100%;
+  padding: 10px !important;
 }
 
 
@@ -16,6 +17,18 @@
 }
 
 .margin {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+p {
+  margin-right: 20px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+h2 {
+  /* color: #FAB803; */
+  color: #0074C8;
+  font-family: "Open Sans";
 }
