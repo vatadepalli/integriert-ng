@@ -24,6 +24,7 @@ import { SolutionsComponent } from './components/pages/solutions/solutions.compo
 import { PartnersComponent } from './components/pages/partners/partners.component';
 import { InsightsComponent } from './components/pages/insights/insights.component';
 import { PrivacyComponent } from './components/pages/privacy/privacy.component';
+import { BannerComponent } from './components/layout/main/banner/banner.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { PrivacyComponent } from './components/pages/privacy/privacy.component';
     SolutionsComponent,
     PartnersComponent,
     InsightsComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

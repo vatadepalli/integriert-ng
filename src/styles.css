@@ -32,4 +32,18 @@ a:hover{
   margin-right: 10px;
 }
 
+.yellow {
+  background-color: #FAB803;
+}
 
+.blue {
+  background-color: #0074C8;
+}
+
+.yellow-text{
+  color: #FAB803;
+}
+
+.blue-text{
+  color: #0074C8;
+}
