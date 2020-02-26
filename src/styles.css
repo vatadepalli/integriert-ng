@@ -48,4 +48,14 @@ a:hover{
   color: #0074C8;
 }
 
+.section {
+  width: calc(100vw - 30px);
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+h2 {
+  /* color: #FAB803; */
+  color: #0074C8;
+  /* font-family: "Open Sans"; */
+}

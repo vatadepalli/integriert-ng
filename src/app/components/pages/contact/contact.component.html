@@ -1,1 +1,72 @@
-<p>contact works!</p>
+<div class="section" style="text-align: center;">
+  <br>
+  <br>
+  <h2>Contact us</h2>
+  <br>
+
+
+  <div class="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput>
+      <mat-hint>Min 5 characters</mat-hint>
+    </mat-form-field>
+
+    <br>
+    <br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput required>
+    </mat-form-field>
+
+    <br>
+    <br>
+
+    <mat-form-field
+      appearance="fill"
+    >
+      <mat-label>Message</mat-label>
+      <textarea matInput style="height: 150px;"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button
+      style="text-align: left !important;"
+      class="yellow">
+      Submit
+    </button>
+  </div>
+
+  <br>
+  <br>
+
+  <mat-grid-list
+    [cols]="'2'"
+    [style.background]="'white'"
+    rowHeight="20rem"
+    >
+    <mat-grid-tile [colspan]="(isHandset$ | async) ? '2' : '1'">
+      <div>
+        <h2>Offices</h2>
+        <h4>USA</h4>
+        <p>708 Bering Dr APTS, <br> Houston, TX, 77057, USA</p>
+
+        <h4>Chennai</h4>
+        <p>3A-401, Bounty Acresm Radial Road, <br> Chennai, TN, 600117, India</p>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="(isHandset$ | async) ? '2' : '1'">
+      <div>
+        <h2>Customer Service</h2>
+        <h4>Venkat Thiru</h4>
+        <p>cs@integriert.com, <br>+1 901 412 8025</p>
+
+        <h4>Krishna Prabhu</h4>
+        <p>cs@integriert.com, <br>+91 799 545 6118</p>
+      </div>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+</div>

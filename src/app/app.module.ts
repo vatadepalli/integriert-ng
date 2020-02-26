@@ -18,7 +18,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MainComponent } from './components/layout/main/main.component';
-import { MatGridListModule } from '@angular/material';
+import { MatGridListModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { WhatWeDoComponent } from './components/pages/what-we-do/what-we-do.component';
 import { SolutionsComponent } from './components/pages/solutions/solutions.component';
 import { PartnersComponent } from './components/pages/partners/partners.component';
@@ -55,7 +55,9 @@ import { BannerComponent } from './components/layout/main/banner/banner.componen
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
